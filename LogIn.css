@@ -1,0 +1,162 @@
+body {
+    background-image: url('sign in.png');
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#shape {
+    position: absolute;
+    background-color: white;
+    
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+    width: 400px;
+    height: 350px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); 
+    
+    text-align: center;
+    font-size: x-large;
+    color: grey;
+}
+
+
+#password {
+    outline: none;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: grey solid 1px;
+    padding: 0 25px;
+
+    border-radius: .5em .5em .5em .5em;
+}
+#email {
+    outline: none;
+
+    position: absolute;
+
+    top: 42%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: grey solid 1px;
+    padding: 0 25px;
+
+    border-radius: .5em .5em .5em .5em;
+}
+
+
+#login {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+
+    width: 340px;
+    height: 60px;
+
+    border-radius: .5em .5em .5em .5em;
+    border: none;
+    background: rgb(15, 147, 255);
+    
+    color: white;
+    font-family: sans-serif;
+
+    font-size: large;
+
+    text-decoration: none;
+}
+#login:hover {
+    transition: all 1s ease;
+
+    border: #0F94FF solid 4px;
+
+    cursor: pointer;
+    background-color: #0028B6;
+}
+
+p {
+    position: absolute;
+
+    top: 67%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+}
+hr {
+    position: absolute;
+
+    top: 65%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+
+    width: 340px;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+
+#spinner {
+    visibility: hidden;
+}
+#spinner:before {
+    content: '';
+    box-sizing: border-box;
+
+    position: absolute;
+
+    top: 65%;
+    left: 53%;
+
+    width: 40px;
+    height: 40px;
+
+    margin-top: -30px;
+    margin-left: -30px;
+
+    border-radius: 50%;
+    border: 2px solid rgb(15, 147, 255);
+    border-top-color: white;
+    
+
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+

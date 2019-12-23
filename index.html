@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maze Editor</title>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <button id="add" onclick="add()"><i class="f/as fa-plus"></i></button>
+    <button id="remove" onclick="remove()"><i class="f/as fa-minus"></i></button>
+    <button id="play" onclick="play()"><i class="f/as fa-check"></i></button>
+    <button id="clearWalls" onclick="clearWalls()"><i class="f/as fa-backspace"></i></button>
+    <button id="clearPath" onclick="clearPath()"><i class="f/as fa-broom"></i></button>
+    <button id="upload" onclick="load()"><i class="f/as fa-upload"></i></button>
+    <button id="load" onclick="upload()"><i class="f/as fa-download"></i></button>
+    <button id="pickStart" onclick="pickStart(event)"><i class="f/as fa-play"></i></button>
+    <button id="pickExit" onclick="pickExit(event)"><i class="f/as fa-sign-out-alt"></i></button>
+
+    <div id="maze">
+        <div id="app" onclick="pickPosition(event)" onmousedown="mouseDown()" onmouseup="mouseUp()"></div>
+    </div>
+
+    <div id="shape">
+        <div>
+            <input id="name" type="text" placeholder="Name"><br>
+        </div>
+        <button id="addMaze" onclick="addMaze()">
+            <div id="text">UPLOAD</div>
+            <div id="spinner"></div>
+        </button>
+        <button id="x" onclick="x()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="mazeContainer" onclick="mazeContainer">
+        <span id="nothing">You don't have any saved mazes</span>
+        <button id="x2" onclick="x2()"><i class="fas fa-times"></i></button>
+
+        <ul id = 'mazeList'></ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ea60f1e06f.js" crossorigin="anonymous"></script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
