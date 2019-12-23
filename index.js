@@ -632,7 +632,7 @@ function play() {
                                     blockRef.setAttribute('y' , r * size)
                                     blockRef.setAttribute('fill' , colors[maze[r][c]]);
                                 canvas.appendChild(blockRef);
-                            } , 50);
+                            } , 30);
                         }  
                 
                     }
@@ -667,7 +667,7 @@ function play() {
                     blockRef.setAttribute('y' , pos.row * size)
                     blockRef.setAttribute('fill' , colors[maze[pos.row][pos.col]]);
                 canvas.appendChild(blockRef);   
-            },50);
+            },30);
         }
     }
 }
